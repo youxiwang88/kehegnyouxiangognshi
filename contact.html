@@ -257,6 +257,387 @@
             <!-- 地图 -->
             <div class="map-section">
                 <iframe
+                    src="https://www.baidu.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.0717289746084!2d121.58769661513!3d31.2090539813673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b270fe08ac0e85%3A0x27cb5e9baa9a3187!2z5byg5rGf6auY56eR5oqA5Zut5Yy6!5e0!3m2!1szh-CN!2scn!4v1623825273619!5m2!1szh-CN!2scn"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-8 text-center">常见问题</h2>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold mb-2">1. 如何获取报价？</h3>
+                    <p class="text-gray-600">您可以通过上传文件到我们的在线报价系统，或直接联系我们的销售团队获取定制报价。通常我们会在24小时内回复您。</p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold mb-2">2. 交付周期是多久？</h3>
+                    <p class="text-gray-600">根据不同的服务类型和项目复杂度，交付周期从3天到2周不等。紧急订单可申请加急服务。</p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold mb-2">3. 是否提供样品服务？</h3>
+                    <p class="text-gray-600">是的，我们可以提供材料样品和小型测试件，帮助您在正式生产前做出最佳决策。</p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold mb-2">4. 如何保障知识产权安全？</h3>
+                    <p class="text-gray-600">我们与所有客户签订保密协议，并采用军工级数据加密系统保护您的设计文件。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 (与其他页面相同) -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="text-center md:text-left">
+                    <h3 class="text-base md:text-lg font-semibold mb-2">科恒3D打印</h3>
+                    <p class="text-gray-400 text-xs md:text-sm">工业级3D打印解决方案专家，1998年创立，为全球客户提供高精度制造服务。</p>
+                </div>
+                <div class="col-span-1 md:col-span-2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-base md:text-lg font-semibold mb-2">快速链接</h3>
+                            <ul class="space-y-1">
+                                <li><a href="products.html"
+                                        class="text-gray-400 hover:text-white text-xs md:text-sm">产品服务</a></li>
+                                <li><a href="cases.html"
+                                        class="text-gray-400 hover:text-white text-xs md:text-sm">成功案例</a></li>
+                                <li><a href="about.html"
+                                        class="text-gray-400 hover:text-white text-xs md:text-sm">关于我们</a></li>
+                                <li><a href="contact.html"
+                                        class="text-gray-400 hover:text-white text-xs md:text-sm">联系我们</a></li>
+                            </ul>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h3 class="text-base md:text-lg font-semibold mb-2">联系方式</h3>
+                            <ul class="space-y-1 text-gray-400 text-xs md:text-sm">
+                                <li>地址：广东省东莞市松山湖高新区</li>
+                                <li>电话：+86 138-XXXX-XXXX</li>
+                                <li>邮箱：info@keheng3d.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center md:text-left">
+                    <h3 class="text-base md:text-lg font-semibold mb-2">关注我们</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-weixin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-weibo"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-6 pt-6 text-center text-gray-400 text-xs">
+                <p>© 2025 科恒3D打印有限公司. 保留所有权利</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 浮动咨询窗口 -->
+    <div class="fixed right-0 top-1/2 transform -translate-y-1/2 z-40">
+        <div id="consultWindow" class="bg-white shadow-lg rounded-l-lg p-4 flex flex-col gap-4">
+            <div class="text-center">
+                <div class="w-12 h-12 mx-auto bg-blue-600 text-white rounded-full flex items-center justify-center">
+                    <i class="fas fa-qrcode"></i>
+                </div>
+                <span class="text-sm block mt-1">微信咨询</span>
+            </div>
+            <div class="text-center">
+                <div class="w-12 h-12 mx-auto bg-blue-600 text-white rounded-full flex items-center justify-center">
+                    <i class="fas fa-comment"></i>
+                </div>
+                <span class="text-sm block mt-1">在线聊天</span>
+            </div>
+            <div class="text-center">
+                <div class="w-12 h-12 mx-auto bg-blue-600 text-white rounded-full flex items-center justify-center">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <span class="text-sm block mt-1">紧急电话</span>
+            </div>
+            <button id="toggleBtn"
+                class="absolute -left-6 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white w-6 h-12 flex items-center justify-center rounded-l-md">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 科恒3D打印有限公司</title>
+    <meta name="description" content="联系科恒3D打印有限公司，获取工业级3D打印、CNC加工和模具开发服务的咨询和报价">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="font-sans">
+    <!-- 导航栏 (与其他页面相同) -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-blue-800">科恒3D打印</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">首页</a>
+                <div class="relative group">
+                    <a href="products.html" class="text-gray-700 hover:text-blue-600">产品服务</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md p-4 w-48">
+                        <a href="industrial-3d-printing.html"
+                            class="block py-2 text-gray-700 hover:text-blue-600">工业级3D打印</a>
+                        <a href="cnc-machining.html" class="block py-2 text-gray-700 hover:text-blue-600">CNC精密加工</a>
+                        <a href="mold-development.html" class="block py-2 text-gray-700 hover:text-blue-600">模具开发</a>
+                    </div>
+                </div>
+                <a href="advantages.html" class="text-gray-700 hover:text-blue-600">技术优势</a>
+                <div class="relative group">
+                    <a href="cases.html" class="text-gray-700 hover:text-blue-600">成功案例</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md p-4 w-48">
+                        <a href="consumer-electronics.html"
+                            class="block py-2 text-gray-700 hover:text-blue-600">消费电子类</a>
+                        <a href="automotive.html" class="block py-2 text-gray-700 hover:text-blue-600">汽车制造类</a>
+                        <a href="medical.html" class="block py-2 text-gray-700 hover:text-blue-600">医疗器械类</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600">关于我们</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md p-4 w-48">
+                        <a href="qualifications.html" class="block py-2 text-gray-700 hover:text-blue-600">企业资质</a>
+                        <a href="smart-factory.html" class="block py-2 text-gray-700 hover:text-blue-600">智能工厂</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="support.html" class="text-gray-700 hover:text-blue-600">技术支持</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md p-4 w-48">
+                        <a href="file-submission.html" class="block py-2 text-gray-700 hover:text-blue-600">文件提交规范</a>
+                        <a href="quote.html" class="block py-2 text-gray-700 hover:text-blue-600">在线报价系统</a>
+                    </div>
+                </div>
+                <a href="news.html" class="text-gray-700 hover:text-blue-600">新闻动态</a>
+                <a href="contact.html" class="text-blue-800 font-semibold hover:text-blue-600">联系我们</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- 移动端导航菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white p-4 shadow-lg">
+            <a href="index.html" class="block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-200">首页</a>
+
+            <div class="py-3 border-b border-gray-200">
+                <div class="flex justify-between items-center cursor-pointer mobile-submenu-toggle">
+                    <a href="products.html" class="text-gray-800 hover:text-blue-600">产品服务</a>
+                    <i class="fas fa-chevron-down text-gray-500"></i>
+                </div>
+                <div class="hidden pl-4 mt-2 space-y-2 mobile-submenu">
+                    <a href="industrial-3d-printing.html"
+                        class="block py-2 text-gray-700 hover:text-blue-600">工业级3D打印</a>
+                    <a href="cnc-machining.html" class="block py-2 text-gray-700 hover:text-blue-600">CNC精密加工</a>
+                    <a href="mold-development.html" class="block py-2 text-gray-700 hover:text-blue-600">模具开发</a>
+                </div>
+            </div>
+
+            <a href="advantages.html"
+                class="block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-200">技术优势</a>
+
+            <div class="py-3 border-b border-gray-200">
+                <div class="flex justify-between items-center cursor-pointer mobile-submenu-toggle">
+                    <a href="cases.html" class="text-gray-800 hover:text-blue-600">成功案例</a>
+                    <i class="fas fa-chevron-down text-gray-500"></i>
+                </div>
+                <div class="hidden pl-4 mt-2 space-y-2 mobile-submenu">
+                    <a href="consumer-electronics.html" class="block py-2 text-gray-700 hover:text-blue-600">消费电子类</a>
+                    <a href="automotive.html" class="block py-2 text-gray-700 hover:text-blue-600">汽车制造类</a>
+                    <a href="medical.html" class="block py-2 text-gray-700 hover:text-blue-600">医疗器械类</a>
+                </div>
+            </div>
+
+            <div class="py-3 border-b border-gray-200">
+                <div class="flex justify-between items-center cursor-pointer mobile-submenu-toggle">
+                    <a href="about.html" class="text-gray-800 hover:text-blue-600">关于我们</a>
+                    <i class="fas fa-chevron-down text-gray-500"></i>
+                </div>
+                <div class="hidden pl-4 mt-2 space-y-2 mobile-submenu">
+                    <a href="qualifications.html" class="block py-2 text-gray-700 hover:text-blue-600">企业资质</a>
+                    <a href="smart-factory.html" class="block py-2 text-gray-700 hover:text-blue-600">智能工厂</a>
+                </div>
+            </div>
+
+            <div class="py-3 border-b border-gray-200">
+                <div class="flex justify-between items-center cursor-pointer mobile-submenu-toggle">
+                    <a href="support.html" class="text-gray-800 hover:text-blue-600">技术支持</a>
+                    <i class="fas fa-chevron-down text-gray-500"></i>
+                </div>
+                <div class="hidden pl-4 mt-2 space-y-2 mobile-submenu">
+                    <a href="file-submission.html" class="block py-2 text-gray-700 hover:text-blue-600">文件提交规范</a>
+                    <a href="quote.html" class="block py-2 text-gray-700 hover:text-blue-600">在线报价系统</a>
+                </div>
+            </div>
+
+            <a href="news.html" class="block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-200">新闻动态</a>
+            <a href="contact.html" class="block py-3 text-blue-600 font-semibold">联系我们</a>
+        </div>
+    </nav>
+
+    <!-- 页面标题区 -->
+    <header class="bg-blue-800 text-white pt-24 pb-12">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold mb-4">联系我们</h1>
+            <p class="text-xl max-w-3xl mx-auto">我们的专业团队随时准备为您提供最适合的解决方案，欢迎随时联系咨询</p>
+        </div>
+    </header>
+
+    <!-- 面包屑导航 -->
+    <div class="bg-gray-100 py-3">
+        <div class="container mx-auto px-6">
+            <ul class="breadcrumb">
+                <li><a href="index.html" class="text-blue-600 hover:text-blue-800">首页</a></li>
+                <li class="text-gray-700">联系我们</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 联系信息和表单区域 -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <!-- 联系信息 -->
+            <div class="mb-10">
+                <h2 class="text-2xl font-bold mb-6">联系方式</h2>
+
+                <div class="overflow-x-auto pb-2">
+                    <div class="flex w-max md:flex md:flex-wrap md:w-full space-x-4 md:space-x-0">
+                        <div class="w-64 md:w-1/4 mb-0 md:mb-4 flex-shrink-0 md:px-2">
+                            <h3 class="text-lg font-semibold mb-2">总部地址</h3>
+                            <p class="text-gray-600">广东省东莞市松山湖高新区科技十路3号</p>
+                            <p class="text-gray-600">邮编: 523000</p>
+                        </div>
+
+                        <div class="w-64 md:w-1/4 mb-0 md:mb-4 flex-shrink-0 md:px-2">
+                            <h3 class="text-lg font-semibold mb-2">联系电话</h3>
+                            <p class="text-gray-600">销售热线: +86 138-XXXX-XXXX</p>
+                            <p class="text-gray-600">客服热线: +86 769-XXXX-XXXX</p>
+                            <p class="text-gray-600">技术支持: +86 138-XXXX-XXXX</p>
+                        </div>
+
+                        <div class="w-64 md:w-1/4 mb-0 md:mb-4 flex-shrink-0 md:px-2">
+                            <h3 class="text-lg font-semibold mb-2">电子邮箱</h3>
+                            <p class="text-gray-600">销售咨询: sales@keheng3d.com</p>
+                            <p class="text-gray-600">技术支持: support@keheng3d.com</p>
+                            <p class="text-gray-600">商务合作: business@keheng3d.com</p>
+                        </div>
+
+                        <div class="w-64 md:w-1/4 mb-0 md:mb-4 flex-shrink-0 md:px-2">
+                            <h3 class="text-lg font-semibold mb-2">营业时间</h3>
+                            <p class="text-gray-600">周一至周五: 9:00 - 18:00</p>
+                            <p class="text-gray-600">周六: 9:00 - 12:00</p>
+                            <p class="text-gray-600">周日: 休息</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 联系表单 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 md:p-6 max-w-3xl mx-auto">
+                <h2 class="text-xl md:text-2xl font-bold mb-4 md:mb-6">发送咨询</h2>
+                <form>
+                    <div class="grid md:grid-cols-2 gap-3 md:gap-4">
+                        <div class="mb-3 md:mb-4">
+                            <label for="name" class="block text-gray-700 text-sm mb-1 md:mb-2">您的姓名</label>
+                            <input type="text" id="name"
+                                class="w-full p-2 md:p-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        </div>
+
+                        <div class="mb-3 md:mb-4">
+                            <label for="company" class="block text-gray-700 text-sm mb-1 md:mb-2">公司名称</label>
+                            <input type="text" id="company"
+                                class="w-full p-2 md:p-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        </div>
+
+                        <div class="mb-3 md:mb-4">
+                            <label for="email" class="block text-gray-700 text-sm mb-1 md:mb-2">电子邮箱</label>
+                            <input type="email" id="email"
+                                class="w-full p-2 md:p-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        </div>
+
+                        <div class="mb-3 md:mb-4">
+                            <label for="phone" class="block text-gray-700 text-sm mb-1 md:mb-2">联系电话</label>
+                            <input type="tel" id="phone"
+                                class="w-full p-2 md:p-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 md:mb-4">
+                        <label for="service" class="block text-gray-700 text-sm mb-1 md:mb-2">咨询服务</label>
+                        <select id="service"
+                            class="w-full p-2 md:p-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            <option value="">-- 请选择 --</option>
+                            <option value="3d-printing">工业级3D打印</option>
+                            <option value="cnc">CNC精密加工</option>
+                            <option value="mold">模具开发</option>
+                            <option value="other">其他服务</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 md:mb-4">
+                        <label for="message" class="block text-gray-700 text-sm mb-1 md:mb-2">咨询内容</label>
+                        <textarea id="message" rows="4"
+                            class="w-full p-2 md:p-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                    </div>
+
+                    <div class="mb-3 md:mb-4">
+                        <label class="flex items-center text-sm">
+                            <input type="checkbox" class="mr-2">
+                            <span class="text-gray-700">我同意科恒3D打印有限公司的<a href="#" class="text-blue-600">隐私政策</a></span>
+                        </label>
+                    </div>
+
+                    <div class="text-center md:text-right">
+                        <button type="submit"
+                            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 md:py-3 px-4 md:px-6 text-sm md:text-base rounded-lg transition duration-300 w-full md:w-auto">
+                            提交咨询
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 地图区域 -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-8 text-center">我们的位置</h2>
+            <!-- 地图 -->
+            <div class="map-section">
+                <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.0717289746084!2d121.58769661513!3d31.2090539813673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b270fe08ac0e85%3A0x27cb5e9baa9a3187!2z5byg5rGf6auY56eR5oqA5Zut5Yy6!5e0!3m2!1szh-CN!2scn!4v1623825273619!5m2!1szh-CN!2scn"
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
