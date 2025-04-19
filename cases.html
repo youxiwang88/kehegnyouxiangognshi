@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成功案例 - 科恒3D打印有限公司</title>
+    <meta name="description" content="科恒3D打印有限公司成功案例展示 - 包括消费电子、汽车制造和医疗器械领域的优秀项目">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="font-sans">
+    <!-- 导航栏 -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-blue-800">科恒3D打印</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">首页</a>
+                <div class="relative group">
+                    <a href="products.html" class="text-gray-700 hover:text-blue-600">产品服务</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md p-4 w-48">
+                        <a href="industrial-3d-printing.html"
+                            class="block py-2 text-gray-700 hover:text-blue-600">工业级3D打印</a>
+                        <a href="cnc-machining.html" class="block py-2 text-gray-700 hover:text-blue-600">CNC精密加工</a>
+                        <a href="mold-development.html" class="block py-2 text-gray-700 hover:text-blue-600">模具开发</a>
+                    </div>
+                </div>
+                <a href="advantages.html" class="text-gray-700 hover:text-blue-600">技术优势</a>
+                <div class="relative group">
+                    <a href="cases.html" class="text-blue-800 font-semibold hover:text-blue-600">成功案例</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md p-4 w-48">
+                        <a href="consumer-electronics.html"
+                            class="block py-2 text-gray-700 hover:text-blue-600">消费电子类</a>
+                        <a href="automotive.html" class="block py-2 text-gray-700 hover:text-blue-600">汽车制造类</a>
+                        <a href="medical.html" class="block py-2 text-gray-700 hover:text-blue-600">医疗器械类</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600">关于我们</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md p-4 w-48">
+                        <a href="qualifications.html" class="block py-2 text-gray-700 hover:text-blue-600">企业资质</a>
+                        <a href="smart-factory.html" class="block py-2 text-gray-700 hover:text-blue-600">智能工厂</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="support.html" class="text-gray-700 hover:text-blue-600">技术支持</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md p-4 w-48">
+                        <a href="file-submission.html" class="block py-2 text-gray-700 hover:text-blue-600">文件提交规范</a>
+                        <a href="quote.html" class="block py-2 text-gray-700 hover:text-blue-600">在线报价系统</a>
+                    </div>
+                </div>
+                <a href="news.html" class="text-gray-700 hover:text-blue-600">新闻动态</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600">联系我们</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- 移动端导航菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white p-4 shadow-lg">
+            <a href="index.html" class="block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-200">首页</a>
+
+            <div class="py-3 border-b border-gray-200">
+                <div class="flex justify-between items-center cursor-pointer mobile-submenu-toggle">
+                    <a href="products.html" class="text-gray-800 hover:text-blue-600">产品服务</a>
+                    <i class="fas fa-chevron-down text-gray-500"></i>
+                </div>
+                <div class="hidden pl-4 mt-2 space-y-2 mobile-submenu">
+                    <a href="industrial-3d-printing.html"
+                        class="block py-2 text-gray-700 hover:text-blue-600">工业级3D打印</a>
+                    <a href="cnc-machining.html" class="block py-2 text-gray-700 hover:text-blue-600">CNC精密加工</a>
+                    <a href="mold-development.html" class="block py-2 text-gray-700 hover:text-blue-600">模具开发</a>
+                </div>
+            </div>
+
+            <a href="advantages.html"
+                class="block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-200">技术优势</a>
+
+            <div class="py-3 border-b border-gray-200">
+                <div class="flex justify-between items-center cursor-pointer mobile-submenu-toggle">
+                    <a href="cases.html" class="text-blue-600 font-semibold">成功案例</a>
+                    <i class="fas fa-chevron-down text-gray-500"></i>
+                </div>
+                <div class="hidden pl-4 mt-2 space-y-2 mobile-submenu">
+                    <a href="consumer-electronics.html" class="block py-2 text-gray-700 hover:text-blue-600">消费电子类</a>
+                    <a href="automotive.html" class="block py-2 text-gray-700 hover:text-blue-600">汽车制造类</a>
+                    <a href="medical.html" class="block py-2 text-gray-700 hover:text-blue-600">医疗器械类</a>
+                </div>
+            </div>
+
+            <div class="py-3 border-b border-gray-200">
+                <div class="flex justify-between items-center cursor-pointer mobile-submenu-toggle">
+                    <a href="about.html" class="text-gray-800 hover:text-blue-600">关于我们</a>
+                    <i class="fas fa-chevron-down text-gray-500"></i>
+                </div>
+                <div class="hidden pl-4 mt-2 space-y-2 mobile-submenu">
+                    <a href="qualifications.html" class="block py-2 text-gray-700 hover:text-blue-600">企业资质</a>
+                    <a href="smart-factory.html" class="block py-2 text-gray-700 hover:text-blue-600">智能工厂</a>
+                </div>
+            </div>
+
+            <div class="py-3 border-b border-gray-200">
+                <div class="flex justify-between items-center cursor-pointer mobile-submenu-toggle">
+                    <a href="support.html" class="text-gray-800 hover:text-blue-600">技术支持</a>
+                    <i class="fas fa-chevron-down text-gray-500"></i>
+                </div>
+                <div class="hidden pl-4 mt-2 space-y-2 mobile-submenu">
+                    <a href="file-submission.html" class="block py-2 text-gray-700 hover:text-blue-600">文件提交规范</a>
+                    <a href="quote.html" class="block py-2 text-gray-700 hover:text-blue-600">在线报价系统</a>
+                </div>
+            </div>
+
+            <a href="news.html" class="block py-3 text-gray-800 hover:text-blue-600 border-b border-gray-200">新闻动态</a>
+            <a href="contact.html" class="block py-3 text-gray-800 hover:text-blue-600">联系我们</a>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="bg-blue-800 text-white py-16 mt-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4 text-animate">成功案例</h1>
+            <p class="text-xl fade-in-up">探索科恒3D打印解决方案的成功应用</p>
+        </div>
+    </section>
+
+    <!-- 案例类别筛选 -->
+    <section class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4 fade-in-up delay-200">
+                <a href="#"
+                    class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors btn-animate">全部案例</a>
+                <a href="#"
+                    class="bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gray-200 transition-colors btn-animate">消费电子</a>
+                <a href="#"
+                    class="bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gray-200 transition-colors btn-animate">汽车制造</a>
+                <a href="#"
+                    class="bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gray-200 transition-colors btn-animate">医疗器械</a>
+                <a href="#"
+                    class="bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-gray-200 transition-colors btn-animate">航空航天</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 案例展示 -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <!-- 特色案例 -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center title-underline text-animate">特色案例</h2>
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden md:flex">
+                    <div class="md:w-1/2 img-reveal">
+                        <img src="images/case-feature.jpg" alt="智能手机散热系统优化" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-6 md:p-8 flex flex-col justify-center">
+                        <div class="flex items-center mb-4 fade-in-right">
+                            <span
+                                class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">消费电子</span>
+                            <span class="ml-2 text-gray-500 text-sm">2023年</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 fade-in-right delay-100">智能手机散热系统优化</h3>
+                        <p class="text-gray-600 mb-6 fade-in-right delay-200">
+                            为某知名智能手机品牌设计并制造了创新的热管散热系统，通过3D打印技术实现了复杂的内部结构，使设备在高负载下的温度降低了18%，同时重量减轻了23%。该解决方案已应用于其旗舰系列产品中。
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 mb-6 fade-in-right delay-300">
+                            <div>
+                                <h4 class="font-semibold text-blue-800">挑战</h4>
+                                <ul class="text-sm text-gray-600 list-disc pl-4 mt-1">
+                                    <li>极限空间限制</li>
+                                    <li>高散热需求</li>
+                                    <li>轻量化要求</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-blue-800">解决方案</h4>
+                                <ul class="text-sm text-gray-600 list-disc pl-4 mt-1">
+                                    <li>拓扑优化设计</li>
+                                    <li>高导热金属3D打印</li>
+                                    <li>多材料混合结构</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fade-in-right delay-400">
+                            <a href="#"
+                                class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition btn-animate">
+                                查看详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 普通案例列表 -->
+            <h2 class="text-3xl font-bold mb-8 text-center title-underline text-animate">更多案例</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 案例1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-effect">
+                    <div class="h-48 overflow-hidden img-reveal">
+                        <img src="images/case1.jpg" alt="汽车轻量化底盘组件"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2 fade-in-up">
+                            <span
+                                class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-semibold">汽车制造</span>
+                            <span class="ml-2 text-gray-500 text-xs">2023年</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 fade-in-up delay-100">汽车轻量化底盘组件</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3 fade-in-up delay-200">
+                            采用先进的金属3D打印技术，为某豪华汽车品牌开发了轻量化底盘支架，重量减轻35%，同时保持了原有的强度和刚性。
+                        </p>
+                        <div class="fade-in-up delay-300">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">了解更多 →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 案例2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-effect">
+                    <div class="h-48 overflow-hidden img-reveal">
+                        <img src="images/case2.jpg" alt="定制化医疗植入物"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2 fade-in-up">
+                            <span
+                                class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-semibold">医疗器械</span>
+                            <span class="ml-2 text-gray-500 text-xs">2022年</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 fade-in-up delay-100">定制化医疗植入物</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3 fade-in-up delay-200">
+                            基于患者CT扫描数据，设计并制造了完全吻合患者骨骼结构的钛合金颅骨植入物，大大缩短了手术时间和康复周期。
+                        </p>
+                        <div class="fade-in-up delay-300">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">了解更多 →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 案例3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-effect">
+                    <div class="h-48 overflow-hidden img-reveal">
+                        <img src="images/case3.jpg" alt="航空发动机燃油喷嘴"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2 fade-in-up">
+                            <span
+                                class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-semibold">航空航天</span>
+                            <span class="ml-2 text-gray-500 text-xs">2022年</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 fade-in-up delay-100">航空发动机燃油喷嘴</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3 fade-in-up delay-200">
+                            通过金属3D打印技术，重新设计了航空发动机的燃油喷嘴，提高了燃烧效率，减少了零件数量，降低了维护成本。
+                        </p>
+                        <div class="fade-in-up delay-300">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">了解更多 →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 案例4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-effect">
+                    <div class="h-48 overflow-hidden img-reveal">
+                        <img src="images/case4.jpg" alt="高精度电子产品外壳"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2 fade-in-up">
+                            <span
+                                class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-semibold">消费电子</span>
+                            <span class="ml-2 text-gray-500 text-xs">2023年</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 fade-in-up delay-100">高精度电子产品外壳</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3 fade-in-up delay-200">
+                            为某高端耳机品牌开发了复杂几何形状的产品外壳，完美融合了美学设计和功能性，同时简化了组装过程。
+                        </p>
+                        <div class="fade-in-up delay-300">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">了解更多 →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 案例5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-effect">
+                    <div class="h-48 overflow-hidden img-reveal">
+                        <img src="images/case5.jpg" alt="工业机器人关节优化"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2 fade-in-up">
+                            <span
+                                class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-semibold">工业制造</span>
+                            <span class="ml-2 text-gray-500 text-xs">2022年</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 fade-in-up delay-100">工业机器人关节优化</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3 fade-in-up delay-200">
+                            重新设计了工业机器人的关节机构，通过3D打印技术整合多个部件为一体化结构，提高了精度和使用寿命。
+                        </p>
+                        <div class="fade-in-up delay-300">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">了解更多 →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 案例6 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover-effect">
+                    <div class="h-48 overflow-hidden img-reveal">
+                        <img src="images/case6.jpg" alt="运动器材结构优化"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2 fade-in-up">
+                            <span
+                                class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-semibold">运动器材</span>
+                            <span class="ml-2 text-gray-500 text-xs">2023年</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 fade-in-up delay-100">运动器材结构优化</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3 fade-in-up delay-200">
+                            为某运动品牌优化了自行车车架结构，通过拓扑优化和3D打印技术，减轻了重量并提高了强度，受到专业运动员的好评。
+                        </p>
+                        <div class="fade-in-up delay-300">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">了解更多 →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分页 -->
+            <div class="mt-12 flex justify-center fade-in-up delay-400">
+                <div class="flex flex-nowrap">
+                    <a href="#"
+                        class="px-4 py-2 mx-1 bg-white rounded-md shadow-sm text-gray-700 hover:bg-gray-100">上一页</a>
+                    <a href="#" class="px-4 py-2 mx-1 bg-blue-600 rounded-md shadow-sm text-white">1</a>
+                    <a href="#"
+                        class="px-4 py-2 mx-1 bg-white rounded-md shadow-sm text-gray-700 hover:bg-gray-100">2</a>
+                    <a href="#"
+                        class="px-4 py-2 mx-1 bg-white rounded-md shadow-sm text-gray-700 hover:bg-gray-100">3</a>
+                    <a href="#"
+                        class="px-4 py-2 mx-1 bg-white rounded-md shadow-sm text-gray-700 hover:bg-gray-100">下一页</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户评价 -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-10 text-center title-underline text-animate">客户评价</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 评价1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md fade-in-up">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden mr-4">
+                            <img src="images/testimonial1.jpg" alt="客户头像" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="font-bold">张经理</h3>
+                            <p class="text-gray-600 text-sm">某知名手机制造商</p>
+                        </div>
+                    </div>
+                    <div class="mb-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600">"科恒3D打印团队在我们产品开发过程中发挥了关键作用。他们提供的散热解决方案不仅解决了我们的技术难题，还缩短了产品上市时间。"</p>
+                </div>
+
+                <!-- 评价2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md fade-in-up delay-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden mr-4">
+                            <img src="images/testimonial2.jpg" alt="客户头像" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="font-bold">李博士</h3>
+                            <p class="text-gray-600 text-sm">某医疗设备研发中心</p>
+                        </div>
+                    </div>
+                    <div class="mb-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600">"科恒的3D打印定制医疗植入物精度令人惊叹，完美契合患者需求，大大改善了手术效果和患者体验。他们的专业团队给我们提供了全方位的支持。"</p>
+                </div>
+
+                <!-- 评价3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md fade-in-up delay-200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden mr-4">
+                            <img src="images/testimonial3.jpg" alt="客户头像" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="font-bold">王工程师</h3>
+                            <p class="text-gray-600 text-sm">某航空零部件供应商</p>
+                        </div>
+                    </div>
+                    <div class="mb-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600">"与科恒合作开发航空零部件是一次非常成功的经历。他们的3D打印技术让我们实现了传统制造方法无法达到的复杂内部结构，同时保证了严格的航空级质量标准。"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作流程 -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center title-underline text-animate">合作流程</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full md:w-4/5 lg:w-3/4">
+                    <div class="relative">
+                        <!-- 时间线 -->
+                        <div
+                            class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200">
+                        </div>
+
+                        <!-- 步骤1 -->
+                        <div class="relative md:flex items-center mb-12">
+                            <!-- 移动端数字显示 -->
+                            <div class="flex justify-center mb-3 md:hidden">
+                                <div
+                                    class="bg-blue-600 rounded-full h-10 w-10 flex items-center justify-center text-white font-bold text-lg shadow-md">
+                                    1
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 md:pr-8 text-left md:text-left fade-in-left">
+                                <h3 class="text-xl font-bold mb-2">1. 需求沟通</h3>
+                                <p class="text-gray-600">详细了解您的项目需求，包括技术规格、材料要求、生产数量和交付时间等</p>
+                            </div>
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-blue-600 text-white justify-center items-center text-lg font-bold count-up"
+                                data-value="1">1</div>
+                            <div class="md:w-1/2 md:pl-8 mt-4 md:mt-0 fade-in-right">
+                                <img src="images/step1.jpg" alt="需求沟通"
+                                    class="rounded-lg shadow-md w-full h-40 object-cover">
+                            </div>
+                        </div>
+
+                        <!-- 步骤2 -->
+                        <div class="relative md:flex items-center mb-12">
+                            <!-- 移动端数字显示 -->
+                            <div class="flex justify-center mb-3 md:hidden">
+                                <div
+                                    class="bg-blue-600 rounded-full h-10 w-10 flex items-center justify-center text-white font-bold text-lg shadow-md">
+                                    2
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-8 mt-0 md:mt-0 order-2 md:order-1 fade-in-left">
+                                <h3 class="text-xl font-bold mb-2">2. 方案设计</h3>
+                                <p class="text-gray-600">我们的工程师团队基于您的需求，提供专业的设计方案和技术解决方案</p>
+                            </div>
+                            <div class="md:w-1/2 md:pr-8 text-left md:text-left order-1 md:order-2 fade-in-right">
+                                <img src="images/step2.jpg" alt="方案设计"
+                                    class="rounded-lg shadow-md w-full h-40 object-cover md:mt-0 mt-4">
+                            </div>
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-blue-600 text-white justify-center items-center text-lg font-bold count-up"
+                                data-value="2">2</div>
+
+                        </div>
+
+                        <!-- 步骤3 -->
+                        <div class="relative md:flex items-center mb-12">
+                            <!-- 移动端数字显示 -->
+                            <div class="flex justify-center mb-3 md:hidden">
+                                <div
+                                    class="bg-blue-600 rounded-full h-10 w-10 flex items-center justify-center text-white font-bold text-lg shadow-md">
+                                    3
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 md:pr-8 text-left md:text-left fade-in-left">
+                                <h3 class="text-xl font-bold mb-2">3. 原型验证</h3>
+                                <p class="text-gray-600">制作产品原型，验证设计方案的可行性，并根据您的反馈进行优化调整</p>
+                            </div>
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-blue-600 text-white justify-center items-center text-lg font-bold count-up"
+                                data-value="3">3</div>
+                            <div class="md:w-1/2 md:pl-8 mt-4 md:mt-0 fade-in-right">
+                                <img src="images/step3.jpg" alt="原型验证"
+                                    class="rounded-lg shadow-md w-full h-40 object-cover">
+                            </div>
+                        </div>
+
+                        <!-- 步骤4 -->
+                        <div class="relative md:flex items-center">
+                            <!-- 移动端数字显示 -->
+                            <div class="flex justify-center mb-3 md:hidden">
+                                <div
+                                    class="bg-blue-600 rounded-full h-10 w-10 flex items-center justify-center text-white font-bold text-lg shadow-md">
+                                    4
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-8 mt-0 md:mt-0 order-2 md:order-1 fade-in-left">
+                                <h3 class="text-xl font-bold mb-2">4. 生产交付</h3>
+                                <p class="text-gray-600">按照确认的方案进行批量生产，严格把控质量，并按时交付成品</p>
+                            </div>
+                            <div class="md:w-1/2 md:pr-8 text-left md:text-left order-1 md:order-2 fade-in-right">
+                                <img src="images/step4.jpg" alt="生产交付"
+                                    class="rounded-lg shadow-md w-full h-40 object-cover md:mt-0 mt-4">
+                            </div>
+                            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-blue-600 text-white justify-center items-center text-lg font-bold count-up"
+                                data-value="4">4</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 咨询区域 -->
+    <section class="py-16 bg-blue-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-animate">想了解您的项目如何受益于我们的解决方案？</h2>
+            <p class="text-xl mb-8 fade-in-up">联系我们的专业团队，获取定制化的3D打印解决方案</p>
+            <div class="fade-in-up delay-200">
+                <a href="contact.html"
+                    class="inline-block bg-white text-blue-800 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition duration-300 btn-animate">
+                    立即咨询
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 (与其他页面相同) -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- 科恒3D打印 - 手机端居中 -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-base md:text-lg font-semibold mb-2">科恒3D打印</h3>
+                    <p class="text-gray-400 text-xs md:text-sm">工业级3D打印解决方案专家，1998年创立，为全球客户提供高精度制造服务。</p>
+                </div>
+
+                <!-- 快速链接和联系方式 - 手机端水平排列两列 -->
+                <div class="grid grid-cols-2 col-span-1 md:col-span-2 gap-3">
+                    <div class="text-xs md:text-sm">
+                        <h3 class="text-base md:text-lg font-semibold mb-2">快速链接</h3>
+                        <ul class="space-y-1">
+                            <li><a href="products.html" class="text-gray-400 hover:text-white">产品服务</a></li>
+                            <li><a href="cases.html" class="text-gray-400 hover:text-white">成功案例</a></li>
+                            <li><a href="about.html" class="text-gray-400 hover:text-white">关于我们</a></li>
+                            <li><a href="contact.html" class="text-gray-400 hover:text-white">联系我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="text-xs md:text-sm">
+                        <h3 class="text-base md:text-lg font-semibold mb-2">联系方式</h3>
+                        <ul class="space-y-1 text-gray-400">
+                            <li>地址：广东省东莞市松山湖高新区</li>
+                            <li>电话：+86 138-XXXX-XXXX</li>
+                            <li>邮箱：info@keheng3d.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 关注我们 - 手机端单独一行居中 -->
+                <div class="text-center md:text-left col-span-1">
+                    <h3 class="text-base md:text-lg font-semibold mb-2">关注我们</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-weixin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-weibo"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-6 pt-6 text-center text-gray-400 text-xs">
+                <p>© 2025 科恒3D打印有限公司. 保留所有权利</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 浮动咨询窗口 -->
+    <div class="fixed right-0 top-1/2 transform -translate-y-1/2 z-40">
+        <div id="consultWindow" class="bg-white shadow-lg rounded-l-lg p-4 flex flex-col gap-4">
+            <div class="text-center">
+                <div class="w-12 h-12 mx-auto bg-blue-600 text-white rounded-full flex items-center justify-center">
+                    <i class="fas fa-qrcode"></i>
+                </div>
+                <span class="text-sm block mt-1">微信咨询</span>
+            </div>
+            <div class="text-center">
+                <div class="w-12 h-12 mx-auto bg-blue-600 text-white rounded-full flex items-center justify-center">
+                    <i class="fas fa-comment"></i>
+                </div>
+                <span class="text-sm block mt-1">在线聊天</span>
+            </div>
+            <div class="text-center">
+                <div class="w-12 h-12 mx-auto bg-blue-600 text-white rounded-full flex items-center justify-center">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <span class="text-sm block mt-1">紧急电话</span>
+            </div>
+            <button id="toggleBtn"
+                class="absolute -left-6 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white w-6 h-12 flex items-center justify-center rounded-l-md">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+
+</html>

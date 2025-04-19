@@ -1,0 +1,224 @@
+/* animations.css - 网站动画效果样式 */
+
+/* 基础过渡效果 */
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+
+/* 淡入动画 */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.fade-in.animate {
+    opacity: 1;
+}
+
+/* 从下方淡入 */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 从左侧淡入 */
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-left.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* 从右侧淡入 */
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-right.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* 缩放动画 */
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.zoom-in.animate {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* 文字动画 */
+.text-animate {
+    overflow: hidden;
+}
+
+.text-animate .char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.text-animate.animate .char {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 延迟动画 */
+.delay-100 {
+    transition-delay: 0.1s;
+}
+
+.delay-200 {
+    transition-delay: 0.2s;
+}
+
+.delay-300 {
+    transition-delay: 0.3s;
+}
+
+.delay-400 {
+    transition-delay: 0.4s;
+}
+
+.delay-500 {
+    transition-delay: 0.5s;
+}
+
+/* 图片动画效果 */
+.img-reveal {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-reveal::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e40af;
+    /* 蓝色遮罩 */
+    transform: translateX(-100%);
+    z-index: 1;
+}
+
+.img-reveal.reveal::after {
+    transform: translateX(100%);
+    transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.img-reveal img {
+    transform: scale(1.1);
+    opacity: 0;
+    transition: transform 1.2s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.8s ease-out;
+    transition-delay: 0.3s;
+}
+
+.img-reveal.reveal img {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* 悬停效果 */
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect.hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 按钮动画效果 */
+.btn-animate {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-animate::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.6s ease-in-out;
+    z-index: 1;
+}
+
+.btn-animate:hover::before {
+    left: 100%;
+}
+
+/* 卡片悬停效果 */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 数字计数器效果 - 添加弹跳效果 */
+.counter {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.counter.bounce {
+    animation: counterBounce 0.5s ease;
+}
+
+@keyframes counterBounce {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* 标题下划线动画 */
+.title-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.title-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1e40af;
+    /* 蓝色下划线 */
+    transition: width 0.5s ease;
+}
+
+.title-underline.animate::after {
+    width: 100%;
+}
